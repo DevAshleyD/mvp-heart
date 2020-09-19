@@ -27,7 +27,6 @@ CMD ["npm start"]
 WORKDIR ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
 WORKDIR ./postgres/seed.sql:/docker-entrypoint-initdb.d/seed.sql
 
-COPY . .
 
 
 
