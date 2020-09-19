@@ -1,0 +1,47 @@
+{
+  "name": "heart_api",
+  "version": "1.0.0",
+  "description": "API for Hack for LA Heart project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hackforla/heart.git"
+  },
+  "main": "./server/index.js",
+  "scripts": {
+    "start": "node ./server/index.js",
+    "debug": "nodemon --inspect=0.0.0.0 ./server/index.js",
+    "lint": "eslint server/**",
+    "test": "jest --detectOpenHandles --verbose",
+    "coverage": "jest --collectCoverageFrom=server/**.js --coverage server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.0",
+    "knex": "^0.16.2",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.7.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.10",
+    "superagent": "^4.0.0",
+    "supertest": "^3.3.0"
+  }
+}
